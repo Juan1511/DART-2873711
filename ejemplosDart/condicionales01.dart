@@ -45,4 +45,10 @@ void main(){
   }else{
     print("el estrato es incorrecto");
   }
+
+
+  //CONDICIONAL MULTIPLE
+  print("*********************");
+  print("CONDICIONAL MULTIPLE");
+  int trimestre = 4;
   }
