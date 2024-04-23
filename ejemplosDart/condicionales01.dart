@@ -7,6 +7,7 @@ void main(){
     print("Usted es mayor de edad");
   }
   print("******************");
+  
   //CONDICIONAL DOBLE
   bool esMayor = true; //Definición y Asignación
   if(esMayor == true){//SI
@@ -14,6 +15,7 @@ void main(){
   }else{//SINO
     print("Es menor de edad");
   }
+   print("******************");
   print("CONDICIONAL DOBLE #2");
   double nota = 4.5;
   if (nota >= 3){
@@ -51,4 +53,32 @@ void main(){
   print("*********************");
   print("CONDICIONAL MULTIPLE");
   int trimestre = 4;
+  switch (trimestre){
+    case 1:
+      print("TRIMESTRE 1");
+      print("Fase de requerimientos");
+      break;
+    case 2:
+      print("TRIMESTRE 2");
+      print("Fase de analisis");
+      break;
+    case 3:
+      print("TRIMESTRE 3");
+      print("Fase de diseño");
+      break;
+    case 4:
+      print("TRIMESTRE 4");
+      print("Fase de implementacion");
+      break;
+    case 5:
+      print("TRIMESTRE 5");
+      print("Fase de fase de pruebas");
+      break;
+    case 6:
+      print("TRIMESTRE 6");
+      print("Fase de mantenimientos");
+      break;
+    default:
+    print("el trimestre es incorrecto");
+  }
   }
