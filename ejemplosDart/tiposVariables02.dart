@@ -1,4 +1,4 @@
-void main(){
+void main() {
   print("Tipos de variables");
   print("Tipo ENTERO");
   int cantExamenes; //Definición variable
@@ -15,8 +15,8 @@ void main(){
   print("***************************");
   print("TIPO CADENA");
   String telefono;
-  telefono = "3137019506";
-  String email = "juandaniel.1gmail.com";
+  telefono = "3042114264";
+  String email = "j15020611zulu@gmail.com";
   print("Su telefono es $telefono y su email es $email");
   print("***********************");
   print("TIPO BOOLEANO");
@@ -25,5 +25,4 @@ void main(){
   bool tieneHijos = true;
   print("Es casado: $esCasado");
   print("Tiene hijos: $tieneHijos");
-
 }
