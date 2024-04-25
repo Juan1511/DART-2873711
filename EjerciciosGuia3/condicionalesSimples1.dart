@@ -1,3 +1,4 @@
+
 import 'dart:io';
 
 void main(List<String> args){
@@ -8,7 +9,7 @@ void main(List<String> args){
 
   //DEFINICION DE VARIABLES
   String? nombre;
-  double horasTrabajadas, cuotaHora, sueldo, incentivo, descuento;
+  double horasTrabajadas, cuotaHora, sueldo, incentivo;
 
   // ENTRADA DE DATOS
   print("ingrese su nombre");
@@ -26,8 +27,6 @@ void main(List<String> args){
     print("se obtuvo un incentivo de $incentivo");
   }
 
-  // SALIDA ALGORITMOS
-  print("el sueldo neto es: $sueldo");
-
-
+  // SALIDA ALGORITMO
+  print("nombre del empleado: $nombre \nel sueldo neto es de $sueldo");
 }
