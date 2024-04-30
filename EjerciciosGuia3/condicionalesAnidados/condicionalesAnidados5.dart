@@ -19,17 +19,16 @@ void main(List<String> args) {
 
   totalCompra = kilosManzana * precioKilo;
 
-  if (kilosManzana < 2) {
+  if (kilosManzana <= 2) {
     descuento = 0;
     totalCompra = totalCompra;
-  } else if (kilosManzana > 2.01 && kilosManzana < 5) {
+  } else if (kilosManzana > 2 && kilosManzana <= 5) {
     descuento = totalCompra * 0.1;
     totalCompra = totalCompra - descuento;
-  } else if (kilosManzana > 5.01 && kilosManzana < 10) {
+  } else if (kilosManzana > 5 && kilosManzana <= 10) {
     descuento = totalCompra * 0.15;
     totalCompra = totalCompra - descuento;
-    //DUDA RESULTADO 10
-  } else if (kilosManzana > 10.01) {
+  } else if (kilosManzana > 10) {
     descuento = totalCompra * 0.2;
     totalCompra = totalCompra - descuento;
   }
