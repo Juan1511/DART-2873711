@@ -23,7 +23,7 @@ void main() {
   areaTerreno = largo * ancho;
   precioTerreno = areaTerreno * precioM2;
   if (areaTerreno > 400) {
-    descuento = precioTerreno - 0.1;
+    descuento = precioTerreno * 0.1;
     precioTerreno = precioTerreno - descuento;
   }
 
