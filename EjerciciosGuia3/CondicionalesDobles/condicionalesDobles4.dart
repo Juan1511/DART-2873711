@@ -7,7 +7,7 @@ void main(List<String> args) {
   */
 
   //DECLARACION DE VARIABLES
-  double ingresos, cuota_inicial, costo_casa, cuota_mensual;
+  double ingresos, cuota_inicial, costo_casa, cuotas;
 
   //ENTRADA DE DATOS
   print("digite los ingresos del usuario:");
@@ -18,13 +18,13 @@ void main(List<String> args) {
   //PROCESO
   if (ingresos >= 800000) {
     cuota_inicial = costo_casa * 0.15;
-    cuota_mensual = (costo_casa - cuota_inicial) / 10;
+    cuotas = (costo_casa - cuota_inicial) / 10;
   } else {
     cuota_inicial = costo_casa * 0.30;
-    cuota_mensual = (costo_casa - cuota_inicial) / 7;
+    cuotas = (costo_casa - cuota_inicial) / 7;
   }
 
   //SALIDA
   print(
-      "la cuota inicial que debe pagar es de: $cuota_inicial \nlos pagos mensuales son de: $cuota_mensual");
+      "la cuota inicial que debe pagar es de: $cuota_inicial \nlos pagos mensuales son de: $cuotas");
 }

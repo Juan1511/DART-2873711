@@ -7,12 +7,12 @@ void main(List<String> args) {
   */
 
   //DECLARACION DE VARIABLES
-  double num1, num2;
+  int num1, num2;
 
   //ENTRADA DE DATOS
   print("digite el numero 1 y 2:");
-  num1 = double.parse(stdin.readLineSync()!);
-  num2 = double.parse(stdin.readLineSync()!);
+  num1 = int.parse(stdin.readLineSync()!);
+  num2 = int.parse(stdin.readLineSync()!);
 
   //PROCESO
   if (num1 > num2) {
