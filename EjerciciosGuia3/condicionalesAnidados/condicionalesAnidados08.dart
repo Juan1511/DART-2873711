@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-   //JUAN MANUEL ZULUAGA - CONDICIONALES ANIDADOS 08
+  //JUAN MANUEL ZULUAGA - CONDICIONALES ANIDADOS 08
   /*
   El jefe del departamento de construcción de la constructora Pagasa, 
   desea que se le desarrolle un programa para sus empleados, 
@@ -18,7 +18,6 @@ void main(List<String> args) {
   String? nombre;
   int horas, horas_extra;
   double precio_hora, total;
-  
 
   //ENTRADA DE DATOS
   print("Ingrese su nombre:");
@@ -30,16 +29,17 @@ void main(List<String> args) {
 
   //PROCESO
   horas_extra = horas - 40;
-  if(horas_extra <= 0){
-    total = precio_hora*horas;
-  }else if(horas_extra <= 10){
-    total = (40*precio_hora)+(horas_extra*precio_hora*2);
-  }else{
-    total = (40*precio_hora)+(10*precio_hora*2)+((horas_extra-10)*precio_hora*3);
+  if (horas_extra <= 0) {
+    total = precio_hora * horas;
+  } else if (horas_extra <= 10) {
+    total = (40 * precio_hora) + (horas_extra * precio_hora * 2);
+  } else {
+    total = (40 * precio_hora) +
+        (10 * precio_hora * 2) +
+        ((horas_extra - 10) * precio_hora * 3);
   }
 
   //SALIDA
   print("nombre empleado: $nombre");
   print("el suldo es de: $total");
-  
 }

@@ -16,15 +16,14 @@ void main(List<String> args) {
   precio_total = double.parse(stdin.readLineSync()!);
 
   //PROCESO
-  if(cantidad_camisas >= 3){
-    descuento = precio_total*0.2;
+  if (cantidad_camisas >= 3) {
+    descuento = precio_total * 0.2;
     precio_descuento = precio_total - descuento;
-  }else{
-    descuento = precio_total*0.1;
+  } else {
+    descuento = precio_total * 0.1;
     precio_descuento = precio_total - descuento;
   }
 
-  //SALIDA 
+  //SALIDA
   print("el precio a pagar es de: $precio_descuento");
-
 }

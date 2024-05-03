@@ -19,17 +19,18 @@ void main(List<String> args) {
   print("digite la clave de descuento:");
   clave = int.parse(stdin.readLineSync()!);
 
-  //PROCESO 
+  //PROCESO
   precio_descuento = 0;
-  if(clave == 1){
-    descuento = precio_original*0.1;
+  if (clave == 1) {
+    descuento = precio_original * 0.1;
     precio_descuento = precio_original - descuento;
   }
-  if(clave == 2){
-    descuento = precio_original*0.2;
+  if (clave == 2) {
+    descuento = precio_original * 0.2;
     precio_descuento = precio_original - descuento;
   }
 
   //SALIDA
-  print("nombre del articulo: $nombre_articulo \nprecio original: $precio_original \nclave de descuento: $clave \nprecio con descuento: $precio_descuento");
+  print(
+      "nombre del articulo: $nombre_articulo \nprecio original: $precio_original \nclave de descuento: $clave \nprecio con descuento: $precio_descuento");
 }

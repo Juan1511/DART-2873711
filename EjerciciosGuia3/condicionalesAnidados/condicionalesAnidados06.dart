@@ -28,23 +28,21 @@ void main(List<String> args) {
   mobiliario = 200000;
 
   //PROCESO
-  if(salario<0){
+  if (salario < 0) {
     prestamo = 1000000;
-  }else if((salario >= 0)&(salario <= 2000000)){
+  } else if ((salario >= 0) & (salario <= 2000000)) {
     prestamo = 2000000 - salario;
-  }else{
+  } else {
     prestamo = 0;
   }
   salario = salario + prestamo;
   salario = salario - equipo;
   salario = salario - mobiliario;
-  insumos = salario*0.5;
-  incentivos = salario*0.5;
-
+  insumos = salario * 0.5;
+  incentivos = salario * 0.5;
 
   //SALIDA
   print("los insumos seran: $insumos");
   print("los incentivos seran:$incentivos");
   print("prestará una cantidad de $prestamo");
-  
 }

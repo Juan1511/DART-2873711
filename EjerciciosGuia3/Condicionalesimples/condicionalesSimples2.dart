@@ -1,5 +1,6 @@
 import 'dart:io';
-void main(){
+
+void main() {
   // JUAN MANUEL ZULUAGA - CONDICIONAL SIMPLE 2
 
   /*
@@ -11,21 +12,21 @@ void main(){
   double areaTerreno, descuento;
 
   //ENTRADA ALGORITMO
-    print("ingrese el largo del tereno");
-    largo = double.parse(stdin.readLineSync()!);
-    print("ingrese el ancho del terreno");
-    ancho = double.parse(stdin.readLineSync()!);
-    print("ingrese el precio del metro cuadrado");
-    precioM2 = double.parse(stdin.readLineSync()!);
+  print("ingrese el largo del tereno");
+  largo = double.parse(stdin.readLineSync()!);
+  print("ingrese el ancho del terreno");
+  ancho = double.parse(stdin.readLineSync()!);
+  print("ingrese el precio del metro cuadrado");
+  precioM2 = double.parse(stdin.readLineSync()!);
 
-    //PROCESO ALGORITMO
-    areaTerreno = largo * ancho; 
-    precioTerreno = areaTerreno * precioM2;
-    if(areaTerreno > 400 ){
-      descuento = precioTerreno - 0.1;
-      precioTerreno = precioTerreno - descuento;
-    }
+  //PROCESO ALGORITMO
+  areaTerreno = largo * ancho;
+  precioTerreno = areaTerreno * precioM2;
+  if (areaTerreno > 400) {
+    descuento = precioTerreno - 0.1;
+    precioTerreno = precioTerreno - descuento;
+  }
 
-    //SALIDA
-    print("el precio del terreno es; $precioTerreno");
+  //SALIDA
+  print("el precio del terreno es; $precioTerreno");
 }

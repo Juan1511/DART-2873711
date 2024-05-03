@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main(List<String> args) {
-   //JUAN MANUEL ZULUAGA - CONDICIONALES ANIDADOS 09
+  //JUAN MANUEL ZULUAGA - CONDICIONALES ANIDADOS 09
   /*
   El fondo de administración de pensiones requiere clasificar a las personas que se jubilaran en el año 2009. 
   Existen tres tipos de jubilaciones: por edad, por antigüedad joven y por antigüedad adulta. 
@@ -23,21 +23,20 @@ void main(List<String> args) {
   antiguedad = int.parse(stdin.readLineSync()!);
 
   //PROCESO
-  if(edad >= 60){
-    if(antiguedad < 25){
+  if (edad >= 60) {
+    if (antiguedad < 25) {
       jubilacion = "lajubilación es por edad.";
-    }else{
+    } else {
       jubilacion = "la jubilación es por antiguedad adulta.";
     }
-  }else{
-    if(antiguedad >= 25){
+  } else {
+    if (antiguedad >= 25) {
       jubilacion = "la jubilación es por antiguedad joven.";
-    }else{
+    } else {
       jubilacion = "no tiene ninguna jubilación";
     }
   }
 
   //SALIDA
   print("su jubilacion es:$jubilacion");
-  
 }

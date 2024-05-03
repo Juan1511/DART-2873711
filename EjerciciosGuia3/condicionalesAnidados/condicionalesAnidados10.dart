@@ -17,55 +17,54 @@ void main(List<String> args) {
   print("cual es sunnivel de hemoglobina");
   nivelHemoglobina = double.parse(stdin.readLineSync()!);
   //PROCESO
-  if(opcionEdad?.toUpperCase() == "SI"){
+  if (opcionEdad?.toUpperCase() == "SI") {
     print("ingrese su edad en años");
     edad = int.parse(stdin.readLineSync()!);
-    if(edad <= 5){
-      if(nivelHemoglobina <= 11.5){
+    if (edad <= 5) {
+      if (nivelHemoglobina <= 11.5) {
         resultado = "Anemia";
-      }else if(nivelHemoglobina > 15){
+      } else if (nivelHemoglobina > 15) {
         resultado = "cardiopatida";
-      }else{
+      } else {
         resultado = "normal";
       }
-    }else if( edad <= 10){
-      if(nivelHemoglobina <= 12.6){
+    } else if (edad <= 10) {
+      if (nivelHemoglobina <= 12.6) {
         resultado = "Anemia";
-      }else if(nivelHemoglobina > 15.5){
+      } else if (nivelHemoglobina > 15.5) {
         resultado = "cardiopatida";
-      }else{
+      } else {
         resultado = "normal";
       }
-    }else if( edad <= 15){
-      if(nivelHemoglobina <= 13){
+    } else if (edad <= 15) {
+      if (nivelHemoglobina <= 13) {
         resultado = "Anemia";
-      }else if(nivelHemoglobina > 15.5){
+      } else if (nivelHemoglobina > 15.5) {
         resultado = "cardiopatida";
-      }else{
+      } else {
         resultado = "normal";
       }
     }
-  }else{
+  } else {
     print("ingrese la edad de el bebe en meses");
     edad = int.parse(stdin.readLineSync()!);
-    if(edad > 0 && edad <= 1){
-      if(nivelHemoglobina < 13){
+    if (edad > 0 && edad <= 1) {
+      if (nivelHemoglobina < 13) {
         resultado = "anemia";
-      }else if (nivelHemoglobina > 18){
+      } else if (nivelHemoglobina > 18) {
         resultado = "cardiopatia";
-      }else{
+      } else {
         resultado = "normal";
       }
-
-    }else if(edad > 1 && edad <= 6){
-      if(nivelHemoglobina < 10){
+    } else if (edad > 1 && edad <= 6) {
+      if (nivelHemoglobina < 10) {
         resultado = "anemia";
-      }else if (nivelHemoglobina > 18){
+      } else if (nivelHemoglobina > 18) {
         resultado = "cardiopatia";
-      }else{
+      } else {
         resultado = "normal";
       }
-    }       
+    }
   }
   print("su genero es: $genero");
   print("el resultado es: $resultado");

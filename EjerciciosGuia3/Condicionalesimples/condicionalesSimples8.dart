@@ -8,7 +8,7 @@ void main(List<String> args) {
   •Por encima de tres minutos es 600 más 150 por cada minuto adicional a los tres primeros.
   */
 
-  //DECLARACION DE VARIABLES 
+  //DECLARACION DE VARIABLES
   int minutos, precio, minutos_extra, precio_extra;
 
   //ENTRADA DE DATOS
@@ -17,10 +17,10 @@ void main(List<String> args) {
 
   //PROCESO
   precio = 600;
-  if(minutos > 3){
-    minutos_extra = minutos-3;
+  if (minutos > 3) {
+    minutos_extra = minutos - 3;
     precio_extra = 150;
-    precio = 600 + (precio_extra*minutos_extra);
+    precio = 600 + (precio_extra * minutos_extra);
   }
 
   //SALIDA

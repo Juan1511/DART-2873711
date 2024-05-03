@@ -14,11 +14,11 @@ void main(List<String> args) {
   fianza = double.parse(stdin.readLineSync()!);
 
   //PROCESO
-cuota = fianza*0.03;
-if(fianza >= 50000){
-  cuota = fianza*0.02;
-}
+  cuota = fianza * 0.03;
+  if (fianza >= 50000) {
+    cuota = fianza * 0.02;
+  }
 
 //SALIDA
-print("la cuota a pagar es de $cuota");
+  print("la cuota a pagar es de $cuota");
 }

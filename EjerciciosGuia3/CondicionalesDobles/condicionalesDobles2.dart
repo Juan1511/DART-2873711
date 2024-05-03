@@ -8,7 +8,7 @@ void main(List<String> args) {
   •Si trabaja más de 40 horas se le paga $16 por cada una de las primeras 40 horas y $20 por cada hora extra.
   */
 
-  //DECLARACION DE VARIABLES 
+  //DECLARACION DE VARIABLES
   double horas_trabajadas, horas_extra, total;
 
   //ENTRDA DE DATOS
@@ -16,11 +16,11 @@ void main(List<String> args) {
   horas_trabajadas = double.parse(stdin.readLineSync()!);
 
   //PROCESO
-  if(horas_trabajadas <= 40){
-    total = horas_trabajadas*16;
-  }else{
+  if (horas_trabajadas <= 40) {
+    total = horas_trabajadas * 16;
+  } else {
     horas_extra = horas_trabajadas - 40;
-    total = (40*16) + (horas_extra*20);
+    total = (40 * 16) + (horas_extra * 20);
   }
 
   //SALIDA

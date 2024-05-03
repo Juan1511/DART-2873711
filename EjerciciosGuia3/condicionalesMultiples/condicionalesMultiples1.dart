@@ -6,12 +6,12 @@ void main(List<String> args) {
   
 
   */
-  
+
   //DECLARACION DE VARIABLES
   String? nombreCliente;
   int tipoCliente;
   int cantEscobas, cantRecogedores, cantAromat;
-  int precioEscoba = 3000, precioRecogedor = 1000, precioAromat = 1000; 
+  int precioEscoba = 3000, precioRecogedor = 1000, precioAromat = 1000;
   double descuento, totalCompra, subTotal;
 
   //ENTRADA DE DATOS
@@ -25,11 +25,11 @@ void main(List<String> args) {
   cantAromat = int.parse(stdin.readLineSync()!);
 
   //PROCESO
-  subTotal = (cantEscobas.toDouble()*precioEscoba)+
-  (cantRecogedores.toDouble()*precioRecogedor)+
-  (cantAromat.toDouble()*precioAromat);
-  switch(tipoCliente){
-    case 1: 
+  subTotal = (cantEscobas.toDouble() * precioEscoba) +
+      (cantRecogedores.toDouble() * precioRecogedor) +
+      (cantAromat.toDouble() * precioAromat);
+  switch (tipoCliente) {
+    case 1:
       descuento = subTotal * 0.05;
       break;
     case 2:
@@ -41,7 +41,7 @@ void main(List<String> args) {
     case 4:
       descuento = subTotal * 0.15;
       break;
-      default:
+    default:
       print("la categoria es incorrecta");
       descuento = 0;
   }
