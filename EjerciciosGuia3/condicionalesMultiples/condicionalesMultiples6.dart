@@ -7,13 +7,15 @@ void main(List<String> args) {
   */
 
   //DECLARACION DE VARIABLES 
-  String? nombre_mes;
+  String? mes;
   int dias, anio, bisiesto;
   int enero=31, febrero=28,marzo=31, abril=30,mayo=31,junio=31,julio=31,agosto=31,septiembre=30,octubre=31,noviembre=30,diciembre=31;
 
   //ENTRADA DE DATOS
   print("ingrese un anio:");
   anio = int.parse(stdin.readLineSync()!);
+  print("ingrese el mes del anio:");
+  mes = stdin.readLineSync();
   print("ingrese 0 si el anio es bisiesto si no lo es 1:");
   bisiesto = int.parse(stdin.readLineSync()!);
 
@@ -22,7 +24,7 @@ void main(List<String> args) {
   if(bisiesto == 0){
     febrero = 29;
   }
-  switch(nombre_mes){
+  switch(mes){
     case "enero":
     dias = enero;
     break;
