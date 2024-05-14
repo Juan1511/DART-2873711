@@ -9,19 +9,15 @@ void main(List<String> args) {
   //DECLARACION DE VARIABLES
   double promedio, nota, suma;
 
-
   //PROCESO
   suma = 0;
-  for( int i = 0; i < 7; i++){
-    print("ingrse la nota:" +(i+1).toString());
+  for (int i = 0; i < 7; i++) {
+    print("ingrse la nota:" + (i + 1).toString());
     nota = double.parse(stdin.readLineSync()!);
     suma += nota;
   }
-  promedio = suma/7;
+  promedio = suma / 7;
 
   //SALIDA
   print("el promedio del estudiante es de: $promedio");
-
-
-
 }

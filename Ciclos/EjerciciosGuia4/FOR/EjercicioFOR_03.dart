@@ -14,15 +14,15 @@ void main(List<String> args) {
   cant_positivos = 0;
   cant_negativos = 0;
   cant_ceros = 0;
-  for( int i = 0; i < 20; i ++){
+  for (int i = 0; i < 20; i++) {
     print("ingrese los numeros ");
     numeros = int.parse(stdin.readLineSync()!);
-    if(numeros > 0){
+    if (numeros > 0) {
       cant_positivos++;
-    }else if( numeros < 0){
-    cant_negativos++;
-    }else if( numeros == 0){
-    cant_ceros++;
+    } else if (numeros < 0) {
+      cant_negativos++;
+    } else if (numeros == 0) {
+      cant_ceros++;
     }
   }
 
