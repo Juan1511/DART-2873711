@@ -1,13 +1,14 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //JUAN MANUEL ZULUAGA - WHILE 06
+  //JUAN MANUEL ZULUAGA - WHILE 08
+
   /*
-  Encontrar el menor valor de un conjunto de n números dados.
+  Encontrar el mayor valor de un conjunto de n números dados.
   */
 
   //DECLARACION DE VARIABLES
-  int contador = 0, numeros, num, valor_menor;
+  int contador = 0, numeros, num, valor_mayor;
 
   //PROCESO
   print("ingrse la cantidad de numeros:");
@@ -16,17 +17,17 @@ void main(List<String> args) {
     print("ingrse el numero:");
     num = int.parse(stdin.readLineSync()!);
     contador++;
-    valor_menor = num;
+    valor_mayor = num;
   } else {
-    valor_menor = 0;
+    valor_mayor = 0;
   }
   while (contador != numeros) {
     print("ingrse el numero");
     num = int.parse(stdin.readLineSync()!);
-    if (num < valor_menor) {
-      valor_menor = num;
+    if (num > valor_mayor) {
+      valor_mayor = num;
     }
     contador++;
   }
-  print("el  numero menor es: $valor_menor");
+  print("el  numero mayor es: $valor_mayor");
 }
