@@ -7,6 +7,7 @@ void main(List<String> args) {
   //DEFINICION DE VARIABLES
 
   int x;
+  // ignore: unused_local_variable
   num resultado, mod, numero;
 
   //ENTRADA DE DATOS
