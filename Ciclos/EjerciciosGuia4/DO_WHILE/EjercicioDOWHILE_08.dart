@@ -40,7 +40,7 @@ void main(List<String> args) {
         cont_U++;
       }
     }
-  } while (letra != "#");
+  } while (letra != "salir");
 
   print("cantidad de vocales:$cont_Vocales");
   print("cantidad de A:$cont_A");

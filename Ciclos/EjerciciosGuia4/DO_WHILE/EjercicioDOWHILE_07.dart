@@ -21,4 +21,5 @@ void main(List<String> args) {
       contador++;
     }
   } while (contador != 10);
+  print("el total de a es de: $contador");
 }
