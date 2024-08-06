@@ -17,6 +17,7 @@ for (var i = 0; i < 5; i++){
 }
 print(nombresVehiculos);
 
+// ignore: unused_local_variable
 List<vehiculo> listaVehiculos = [];
 String colorUsuario;
 int velocidadUsuario;
