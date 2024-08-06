@@ -11,6 +11,29 @@ class vehiculo {
 
   vehiculo(this.color, this.velocidad, this.tamano) {}
 
+  //METODOS SET Y GET
+  //SETEA O ASIGNA UN NUEVO VALOR PARA EL ATRIBUTO COLOR
+  void setColor(String newColor){
+    this.color = newColor;
+  }
+  void setVelocidiad(int newVelocidad){
+    this.velocidad = newVelocidad;
+  }
+  void setTamano(double newTamano){
+    this.tamano = newTamano;
+  }
+
+  //PERMITE OBTENER EL VALOR DEL ATRIBUTO COLOR
+  String getColor(){
+    return this.color;
+  }
+  int getvelocidad(){
+    return this.velocidad;
+  }
+  double getTmano(){
+    return this.tamano;
+  }
+
   void avanzar(int velAvanzar) {
     int newVelocidad = this.velocidad + velAvanzar;
     if (newVelocidad <= 200) {

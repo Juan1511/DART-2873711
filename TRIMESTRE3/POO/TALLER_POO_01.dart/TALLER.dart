@@ -1,6 +1,6 @@
 import 'dart:io';
+import 'EMPLEADO.dart';
 
-import 'Empleado.dart';
 
 void main(List<String> args) {
   List<Empleado> listaEmpleados = [];
